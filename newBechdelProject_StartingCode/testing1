@@ -1,0 +1,18 @@
+
+---Testing passedBechdel()---
+Expected Output: 0
+Actual Output: 0
+
+The following movies passed the Bechdel Test:
+
+---Testing passedPeirceorLandau()---
+Expected Output: 0
+Actual Output: 0
+
+The following movies passed the Peirce Test or the Landau Test:
+
+---Testing passedWhiteNotRees()---
+Expected Output: 0
+Actual Output: 0
+
+The following movies passed the White Test and not the Rees-Davies Test:

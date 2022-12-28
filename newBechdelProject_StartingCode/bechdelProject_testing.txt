@@ -1,0 +1,289 @@
+Actor.main({ });
+~~~~~~~Creating new actors and printing them out~~~~~~
+Bud M, Male
+Winnie M, Male
+Jennifer K, Female
+Kim H, Male
+Audrey Y, Female
+
+~~~~~~~Testing setGender() method~~~~~~
+Changing Actor Audreys gender to Male--> Expected: Male Actual: Male
+Changing Actor Kims gender to Female--> Expected: Female Actual: Female
+
+~~~~~~~Testing getGender() method~~~~~~
+Getting Actor Audreys gender Expected: Male Actual: Male
+Getting Actor Jennifers gender Expected: Female Actual: Female
+
+~~~~~~~Testing getName() method~~~~~~
+Getting Actor Winnies name Expected: Winnies M Actual: Winnie M
+Getting Actor Buds name Expected: Bud M Actual: Bud M
+
+~~~~~~~Testing hashCode() method~~~~~~
+HashCode for Actor Bud :64535102
+HashCode for Actor Winnie :-1041697413
+HashCode for Actor Jennifer :853740624
+HashCode for Actor Kim :72497943
+HashCode for Actor Audreys :1048593103
+
+~~~~~~~Testing equals() method~~~~~~
+Bud equals to Winnie (false): false
+Winnie equals to Bud (false): false
+Audrey equals to Kim (false): false
+Kim equals to Kim (true): true
+
+Movie.main({ });
+---Testing addOneActor()---
+Test String: "Boo! A Madea Halloween","Diamond White","Tiffany","Supporting","8","Female
+Expected Output: Diamond White (Female)
+Actual Output: Diamond White, Female
+
+---Testing addAllActors()---
+Test File: small_castGender.txt
+Expected Output: Hashtable with Tyler, Cassi, Patrice, and Stella
+Actual Output: {Patrice Lovely, Female=Supporting, Cassi Davis, Female=Supporting, Stella, Male=Leading, Tyler Perry, Male=Leading}
+
+----Testing getActors() and getAllActors()----
+Expected Output getActors(): [Patrice Lovely, Cassi Davis, Stella, Tyler Perry]
+Actual Output: [Patrice Lovely, Cassi Davis, Stella, Tyler Perry]
+Expected Output getAllActors(): Hashtable with Tyler, Cassi, Patrice, and Stella
+Actual Output: {Patrice Lovely, Female=Supporting, Cassi Davis, Female=Supporting, Stella, Male=Leading, Tyler Perry, Male=Leading}
+
+----Testing setTestResults()----
+Input: "0,0,0,1,0,0,0,1,0,0,1,1,1"
+Expected Output: [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1]
+Actual Output: [1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0]
+
+----Testing toString()----
+Alpha with a raw feminist score of 0 and a bonus of 0
+
+----Testing feministScore()----
+Alpha,0,0,0,1,0,0,0,1,0,0,1,1,1
+Expected Output: 75
+Actual Output: 75
+Beta,0,0,0,1,0,0,0,1,0,0,1,1,1
+Expected Output: 0
+Actual Output: 0
+Gamma,0,0,0,1,0,0,0,1,0,0,1,1,1
+Expected Output: 0
+Actual Output: 0
+
+----Testing two movies with a raw feminist score of 40----
+Expected Output: -1 (where Ice Age has a smaller feminist score than Storks
+Actual Output: 1
+
+----Testing two movies with a total feminist score of 62----
+Expected Output: 1 (where Arrival is lexicographically first)
+Actual Output: 1
+
+MovieCollection.main({ });
+---Testing MovieCollection constructor and its getter methods()---
+
+---Testing getMovies() with the small allTests---
+[Alpha with a raw feminist score of 75 and a bonus of 8, Beta with a raw feminist score of 75 and a bonus of 8, Gamma with a raw feminist score of 75 and a bonus of 8]
+
+---Testing getMovieTitles() with the small allTests---
+[Alpha, Beta, Gamma]
+
+---Testing readCasts() and the toString() with the small allTests---
+Expecting the names to repeat three times, since all movie has the same actors:
+[Patrice Lovely, Female, Cassi Davis, Female, Stella, Male, Tyler Perry, Male, Takis, Female, Patrice Lovely, Female, Cassi Davis, Female, Tyler Perry, Male, Cassi Davis, Female, Tyler Perry, Male]
+
+---Testing findAllMoviesPassedTestNum()---
+Expected Output: 27
+Actual Output: 27
+
+---Testing passedBechdel()---
+Expected Output: 32
+Actual Output: 32
+
+The following movies passed the Bechdel Test:
+Bad Moms
+Hidden Figures
+Independence Day: Resurgence
+Finding Dory
+Ghostbusters
+The Divergent Series: Allegiant
+Arrival
+Ice Age: Collision Course
+Kung Fu Panda 3
+Miss Peregrine's Home for Peculiar Children
+Sing
+The Boss
+The Girl on the Train
+Boo! A Madea Halloween
+Alice Through the Looking Glass
+Fantastic Beasts and Where to Find Them
+La La Land
+Pete's Dragon
+Sausage Party
+Suicide Squad
+The Conjuring 2: The Enfield Poltergeist
+The Purge: Election Year
+X-Men: Apocalypse
+10 Cloverfield Lane
+Captain America: Civil War
+Don't Breathe
+Lights Out
+Moana
+Teenage Mutant Ninja Turtles: Out of the Shadows
+Trolls
+Zootopia
+Rogue One: A Star Wars Story
+
+---Testing passedPeirceorLandau()---
+Expected Output: 47
+Actual Output: 47
+
+The following movies passed the Peirce Test or the Landau Test:
+Bad Moms
+Hidden Figures
+Independence Day: Resurgence
+Finding Dory
+Ghostbusters
+The Divergent Series: Allegiant
+Arrival
+Ice Age: Collision Course
+Kung Fu Panda 3
+Miss Peregrine's Home for Peculiar Children
+Sing
+The Boss
+The Girl on the Train
+Boo! A Madea Halloween
+Alice Through the Looking Glass
+Fantastic Beasts and Where to Find Them
+La La Land
+Now You See Me 2
+Passengers
+Sausage Party
+Storks
+Suicide Squad
+The Conjuring 2: The Enfield Poltergeist
+The Purge: Election Year
+X-Men: Apocalypse
+10 Cloverfield Lane
+Batman v Superman: Dawn of Justice
+Captain America: Civil War
+Central Intelligence
+Don't Breathe
+Hacksaw Ridge
+Lights Out
+Moana
+Ride Along 2
+Star Trek Beyond
+Sully
+Teenage Mutant Ninja Turtles: Out of the Shadows
+The Angry Birds Movie
+The Magnificent Seven
+Trolls
+Zootopia
+Jason Bourne
+Rogue One: A Star Wars Story
+The Accountant
+The Jungle Book
+The Legend of Tarzan
+The Secret Life of Pets
+
+---Testing passedWhiteNotRees()---
+Expected Output: 0
+Actual Output: 0
+
+These are the movies passed the White Test and not the Rees-Davies Test:
+None of the movies pass.
+
+---Testing KDtest() from Movie class---
+Testing on Bad Moms
+Expected Output: 1
+This movie has 2 supporting actors of known gender, 2 of which are female.
+Actual Output: 1
+
+---Testing CompareTo() from Movie class---
+<front of queue>
+Independence Day: Resurgence with a raw feminist score of 83 and a bonus of 8
+Hidden Figures with a raw feminist score of 77 and a bonus of 8
+Bad Moms with a raw feminist score of 75 and a bonus of 8
+Ghostbusters with a raw feminist score of 68 and a bonus of 8
+The Divergent Series: Allegiant with a raw feminist score of 64 and a bonus of 8
+Arrival with a raw feminist score of 62 and a bonus of 6
+The Girl on the Train with a raw feminist score of 62 and a bonus of 6
+Finding Dory with a raw feminist score of 60 and a bonus of 8
+Miss Peregrine's Home for Peculiar Children with a raw feminist score of 56 and a bonus of 6
+Boo! A Madea Halloween with a raw feminist score of 54 and a bonus of 8
+The Boss with a raw feminist score of 53 and a bonus of 6
+Sing with a raw feminist score of 49 and a bonus of 10
+Fantastic Beasts and Where to Find Them with a raw feminist score of 48 and a bonus of 6
+The Purge: Election Year with a raw feminist score of 48 and a bonus of 6
+Kung Fu Panda 3 with a raw feminist score of 46 and a bonus of 10
+La La Land with a raw feminist score of 46 and a bonus of 6
+The Conjuring 2: The Enfield Poltergeist with a raw feminist score of 46 and a bonus of 6
+Alice Through the Looking Glass with a raw feminist score of 43 and a bonus of 8
+Pete's Dragon with a raw feminist score of 43 and a bonus of 8
+Now You See Me 2 with a raw feminist score of 42 and a bonus of 4
+Ice Age: Collision Course with a raw feminist score of 40 and a bonus of 10
+Storks with a raw feminist score of 40 and a bonus of 6
+Passengers with a raw feminist score of 40 and a bonus of 4
+X-Men: Apocalypse with a raw feminist score of 40 and a bonus of 4
+Sausage Party with a raw feminist score of 39 and a bonus of 8
+Suicide Squad with a raw feminist score of 39 and a bonus of 8
+10 Cloverfield Lane with a raw feminist score of 36 and a bonus of 4
+Zootopia with a raw feminist score of 36 and a bonus of 4
+Moana with a raw feminist score of 35 and a bonus of 6
+Central Intelligence with a raw feminist score of 34 and a bonus of 4
+Don't Breathe with a raw feminist score of 33 and a bonus of 6
+Lights Out with a raw feminist score of 33 and a bonus of 6
+Trolls with a raw feminist score of 33 and a bonus of 6
+Batman v Superman: Dawn of Justice with a raw feminist score of 30 and a bonus of 4
+The Magnificent Seven with a raw feminist score of 30 and a bonus of 2
+Star Trek Beyond with a raw feminist score of 29 and a bonus of 6
+Ride Along 2 with a raw feminist score of 29 and a bonus of 4
+The Angry Birds Movie with a raw feminist score of 29 and a bonus of 4
+Captain America: Civil War with a raw feminist score of 27 and a bonus of 6
+Sully with a raw feminist score of 27 and a bonus of 4
+Teenage Mutant Ninja Turtles: Out of the Shadows with a raw feminist score of 27 and a bonus of 4
+The Legend of Tarzan with a raw feminist score of 26 and a bonus of 2
+The Accountant with a raw feminist score of 25 and a bonus of 4
+Rogue One: A Star Wars Story with a raw feminist score of 23 and a bonus of 4
+Hacksaw Ridge with a raw feminist score of 21 and a bonus of 4
+Jason Bourne with a raw feminist score of 17 and a bonus of 4
+The Jungle Book with a raw feminist score of 16 and a bonus of 4
+The Secret Life of Pets with a raw feminist score of 13 and a bonus of 2
+Deadpool with a raw feminist score of 10 and a bonus of 2
+Doctor Strange with a raw feminist score of 4 and a bonus of 2
+<rear of queue>
+
+javafoundations.PriorityQueue.main({ });
+
+----Testing constructor and toString()----
+Expected Output: empty queue
+Actual Output: 
+<front of queue>
+<rear of queue>
+
+----Testing on empty queue----
+isEmpty():
+Expected Output: true, Actual Output: true
+size():
+Expected Output: 0, Actual Output: 0
+
+----Testing enqueue----
+Enqueueing 3,4,5,1,2
+Expecting 5,4,3,2,1 in order. Actual Output: 
+<front of queue>
+5
+4
+3
+2
+1
+<rear of queue>
+
+----Testing first()----
+Expecting 5. Actual Output: 5
+
+----Testing dequeue()----
+Expected return: 5. Actual return: 5
+Now, expecting queue with 4,3,2,1. Actual Output: 
+<front of queue>
+4
+3
+2
+1
+<rear of queue>
